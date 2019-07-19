@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <title>Moudouweb</title>
+    <title>モウドウウェブ</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= javascript_include_tag 'application' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <h1>モウドウウェブ</h1>
+    <p>このサイトは、視覚障害者のためのウェブサービスです。どのサイトよりもスクリーンリーダーなどで分かりやすいページ、サービスを目指して作成しています。</p>
+    <nav>
+      <h2>メニュー</h2>
+      <ul>
+        <li>トップページ</li>
+        <li>ウェブ検索</li>
+        <li>ショッピング</li>
+        <li>フォーラム</li>
+        <li>各機能についての説明</li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
+  <%# javascript_include_tag 'application' %>
 </html>
