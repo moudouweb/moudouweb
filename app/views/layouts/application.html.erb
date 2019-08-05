@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
-    <h1>モウドウウェブ</h1>
-    <p>このサイトは、視覚障害者のためのウェブサービスです。どのサイトよりもスクリーンリーダーなどで分かりやすいページ、サービスを目指して作成しています。</p>
+  <body style="max-width: 500px; margin: 0 auto; font-size: 120%;">
+    <h1><%= link_to 'モウドウウェブ', root_path %></h1>
+    <%= yield %>
     <nav>
-      <h2>メニュー</h2>
+      <h2>サイトメニュー</h2>
       <ul>
         <li><%= link_to 'トップページ', root_path %></li>
         <li><%= link_to 'モウドウウェブについて', feature_path %></li>
@@ -20,7 +20,6 @@
         <li>ショッピング</li> %>
       </ul>
     </nav>
-    <%= yield %>
   </body>
   <%# javascript_include_tag 'application' %>
 </html>
