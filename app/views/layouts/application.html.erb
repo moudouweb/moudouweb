@@ -13,11 +13,11 @@
     <nav>
       <h2>メニュー</h2>
       <ul>
-        <li>トップページ</li>
+        <li><%= link_to 'トップページ', root_path %></li>
+        <li><%= link_to 'モウドウウェブについて', feature_path %></li>
+        <%# <li>フォーラム</li>
         <li>ウェブ検索</li>
-        <li>ショッピング</li>
-        <li>フォーラム</li>
-        <li>各機能についての説明</li>
+        <li>ショッピング</li> %>
       </ul>
     </nav>
     <%= yield %>
