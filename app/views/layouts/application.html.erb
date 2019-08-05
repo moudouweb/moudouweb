@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body style="max-width: 500px; margin: 0 auto; font-size: 120%;">
+  <body style="max-width: 500px; margin: 0 auto; font-size: 120%; font-family: sanserif;">
     <h1><%= link_to 'モウドウウェブ', root_path %></h1>
     <%= yield %>
     <nav>
       <h2>サイトメニュー</h2>
       <ul>
-        <li><%= link_to 'トップページ', root_path %></li>
-        <li><%= link_to 'モウドウウェブについて', feature_path %></li>
+        <li><p><%= link_to 'トップページ', root_path %></p></li>
+        <li><p><%= link_to 'モウドウウェブについて', feature_path %></p></li>
+        <li><p><%= link_to 'ログイン、ユーザー登録', login_path %></p></li>
         <%# <li>フォーラム</li>
         <li>ウェブ検索</li>
         <li>ショッピング</li> %>
